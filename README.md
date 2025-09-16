@@ -10,7 +10,7 @@
 ### Website Preview
 <p align="center"> 
   <kbd>
-    <a href="https://github.com/SergeyNoritsyn/SergeyNoritsyn.github.io" target="_blank"><img src="examples/preview.gif">
+    <a href="https://SergeyNoritsyn.github.io" target="_blank"><img src="examples/preview.gif">
   </a>
   </kbd>
 </p>
