@@ -398,6 +398,7 @@ h3 {
 
 .card .card-content p {
   padding: 5px 0 0;
+  overflow-y: auto;
 }
 
 .card h5 {
