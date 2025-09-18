@@ -420,6 +420,7 @@ h3 {
 
 #experience .card .col.s12.m2 a {
   display: block;
+  overflow-y: auto;
 }
 
 #experience .card .col.s12.m2 a img {
@@ -530,6 +531,8 @@ a.hoverline:hover {
 
 #experience .col.s12.m2 {
   text-align: center;
+  overflow-y: auto;
+  overflow-y: auto;
 }
 
 .fa-external-link:before {
