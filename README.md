@@ -10,7 +10,7 @@
 ### Required Lab Practical Screenshots
 
 <p> Part 1 - Cloning repo </p>
-![Repo Screenshot](https://github.com/SergeyNoritsyn/SergeyNoritsyn.github.io/blob/assets/img/screenshot_pt1_repo.png)
+![Repo Screenshot](https://github.com/SergeyNoritsyn/SergeyNoritsyn.github.io/blob/assets/img/screenshot_pt1_repo.png?raw=true)
 
 <p> Part 2 - Filling in info </p>
 ![Repo Screenshot](https://github.com/SergeyNoritsyn/SergeyNoritsyn.github.io/blob/assets/img/screenshot_pt2_repo.png)
