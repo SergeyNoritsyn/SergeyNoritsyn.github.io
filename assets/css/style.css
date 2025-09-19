@@ -394,6 +394,7 @@ h3 {
 
 .card .card-content {
   padding-bottom: 30px;
+  max-height: 100px;
   overflow-y: auto;
 }
 
