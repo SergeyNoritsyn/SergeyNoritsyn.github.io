@@ -351,77 +351,14 @@
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
-        <div class="row">
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/graph.webp" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Dynamic Risk Detection in Pediatric Transplant Patients (Thesis)<i
-                    class="mdi-navigation-more-vert right"></i></span>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <!-- <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Search and filter songs based on language and singer.</li>
-                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
-                  <li>Scroll through recently played/viewed songs.</li> -->
+        <div id="recent-projects" class="row">
+          <!-- Projects will be 'injected' here -->
 
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline"><i
-                    class="mdi-navigation-more-vert right"></i>Limiting LLM Hallucinations (Capstone)</span>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <!-- <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Play Quiz and see the leaderboard</li> -->
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="center-align">
+          <button id="load-more" class="btn waves-effect waves-light teal">Load More</button>
+        </div>
+        
 
           <!-- 1. Django Project -->
           <!-- <div class="col s12 m6 l6">
@@ -461,75 +398,10 @@
           </div> -->
 
           <!-- Flask Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/tamagotchi.webp"
-                style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Tamagotchi Web Game<i
-                    class="mdi-navigation-more-vert right"></i></span>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Python</li>
-                  <li>Users can view posts and contact the admin via Contact Page.</li>
-                  <li>Admin can Add, Delete, Update posts.</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           <!-- VQA -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/project-aim_bert-bias.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">GAN for Addressing Medical Dataset Imbalance<i
-                    class="mdi-navigation-more-vert right"></i></span>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Investigated using DCGAN in TensorFlow for generation of synthetic chest X-rays to address
-class imbalance in the PneumoniaMNIST dataset.</li>
-                  <li>Trained CNN classifiers with varying dataset configurations to assess model robustness.</li>
-                  <li>Achieved classifier accuracy over 90% through GAN-based augmentation, validating the
-potential of using synthetic data for addressing imbalances in healthcare data.</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           
           <!-- Video Summarizer -->
            <!--
@@ -889,6 +761,103 @@ potential of using synthetic data for addressing imbalances in healthcare data.<
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
+  </script>
+  <script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+    renderProjects(); // load the first project
+    document.getElementById("load-more").addEventListener("click", renderProjects);
+  });
+
+  const projects = [
+  {
+    title: "Dynamic Risk Detection in Pediatric Transplant Patients (Thesis)",
+    img: "/assets/img/graph.webp",
+    description: "Machine learning models for early detection of complications in pediatric transplant patients.",
+    demoLink: "",
+    githubLink: ""
+  },
+  {
+    title: "Limiting LLM Hallucinations (Capstone)",
+    img: "/assets/img/project-quizup-logo-1.png",
+    description: "Using RAG-based knowledge graphs to reduce hallucinations in large language models.",
+    demoLink: "",
+    githubLink: ""
+  },
+  ];
+
+  let currentIndex = 0;
+  const projectsPerLoad = 1; // show 1 project at a time
+
+  function renderProjects() {
+    const container = document.getElementById("recent-projects");
+
+    // Slice the array to load only the next project(s)
+    const nextProjects = projects.slice(currentIndex, currentIndex + projectsPerLoad);
+
+    nextProjects.forEach(project => {
+      const card = document.createElement("div");
+      card.classList.add("col", "s12", "m6", "l4");
+
+      card.innerHTML = `
+        <div class="card medium">
+          <!-- Card Image -->
+          <div class="card-image waves-effect waves-block waves-light">
+            <img src="${project.img}" alt="${project.title}" 
+                style="height: 100%; width: 100%" class="activator"/>
+          </div>
+
+          <!-- Card Title -->
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">
+              ${project.title}
+              <i class="mdi-navigation-more-vert right"></i>
+            </span>
+          </div>
+
+          <!-- Card Reveal (hidden until clicked) -->
+          <div class="card-reveal">
+            <span class="card-title grey-text">
+              <small>About</small>
+              <i class="mdi-navigation-close right"></i>
+            </span>
+            <p>${project.description}</p>
+            <div class="card-action">
+              <a href="${project.demoLink}" target="_blank" 
+                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" 
+                data-tooltip="View Online">
+                <i class="fa fa-external-link"></i>
+              </a>
+              <a href="${project.githubLink}" target="_blank" 
+                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" 
+                data-tooltip="View Source">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+
+      container.appendChild(card);
+      });
+
+    // Update index
+    currentIndex += projectsPerLoad;
+
+    // Hide "Load More" button if no more projects
+    if (currentIndex >= projects.length) {
+      document.getElementById("load-more").style.display = "none";
+    }
+
+
+    // Update index
+    currentIndex += projectsPerLoad;
+
+    // Hide button if no more projects
+    if (currentIndex >= projects.length) {
+      document.getElementById("load-more").style.display = "none";
+    }
+  }
   </script>
 </body>
 
