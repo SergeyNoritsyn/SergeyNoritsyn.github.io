@@ -762,12 +762,8 @@
       })
     })
   </script>
-  <script>
 
-  document.addEventListener("DOMContentLoaded", () => {
-    renderProjects(); // load the first project
-    document.getElementById("load-more").addEventListener("click", renderProjects);
-  });
+  <script>
 
   const projects = [
     {
@@ -786,19 +782,19 @@
     }
   ];
 
-  let currentIndex = 0;
-  const projectsPerLoad = 1; // show 1 project at a time
-
   function renderProjects() {
     const container = document.getElementById("recent-projects");
-    
+    let nextProjects;
+
     if (currentIndex === 0) {
-      const nextProjects = projects.slice(currentIndex, currentIndex + projectsPerLoad);
+      // First time → show only the first project
+      nextProjects = projects.slice(0, 1);
+      currentIndex = 1; // move index forward
+    } else {
+      // Second time → show everything else
+      nextProjects = projects.slice(1);
+      currentIndex = projects.length; // mark all as shown
     }
-    else {
-      const nextProjects = projects.slice(currentIndex);
-    }
-    // Slice the array to load only the next project(s)
 
     nextProjects.forEach(project => {
       const card = document.createElement("div");
@@ -806,21 +802,16 @@
 
       card.innerHTML = `
         <div class="card medium">
-          <!-- Card Image -->
           <div class="card-image waves-effect waves-block waves-light">
             <img src="${project.img}" alt="${project.title}" 
                 style="height: 100%; width: 100%" class="activator"/>
           </div>
-
-          <!-- Card Title -->
           <div class="card-content">
             <span class="card-title activator teal-text hoverline">
               ${project.title}
               <i class="mdi-navigation-more-vert right"></i>
             </span>
           </div>
-
-          <!-- Card Reveal (hidden until clicked) -->
           <div class="card-reveal">
             <span class="card-title grey-text">
               <small>About</small>
@@ -842,19 +833,22 @@
           </div>
         </div>
       `;
-
-    container.appendChild(card);
+      container.appendChild(card);
     });
 
-    // Update index
-    currentIndex += projectsPerLoad;
-
-    // Hide "Load More" button if no more projects
+    // If everything is shown → hide button
     if (currentIndex >= projects.length) {
       document.getElementById("load-more").style.display = "none";
     }
   }
+
+  // Attach event listener properly
+  document.addEventListener("DOMContentLoaded", () => {
+    renderProjects(); // load first project on page load
+    document.getElementById("load-more").addEventListener("click", renderProjects);
+  });
   </script>
+
 </body>
 
 </html>
