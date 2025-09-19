@@ -9,24 +9,24 @@
 
 ### Required Lab Practical Screenshots
 
-<p> Part 1 - Cloning repo </p>
-![Repo Screenshot](/assets/img/screenshot_pt1_repo.png)
+Part 1 - Cloning repo
+![Repo Screenshot](assets/img/screenshot_pt1_repo.png)
 
-<p> Part 2 - Filling in info </p>
-![Repo Screenshot](/assets/img/screenshot_pt2_repo.png)
-![Home Page Screenshot](/assets/img/screenshot_pt2_website.png)
+Part 2 - Filling in info
+![Repo Screenshot](assets/img/screenshot_pt2_repo.png)
+![Home Page Screenshot](assets/img/screenshot_pt2_website.png)
 
-<p> Part 3 - Update theme </p>
-![Repo Screenshot](/assets/img/screenshot_pt3_repo.png)
-![Home Page Screenshot](/assets/img/screenshot_pt3_website.png)
+Part 3 - Update theme
+![Repo Screenshot](assets/img/screenshot_pt3_repo.png)
+![Home Page Screenshot](assets/img/screenshot_pt3_website.png)
 
-<p> Part 4 - Adding Places Map </p>
-![Repo Screenshot](/assets/img/screenshot_pt4_repo.png)
-![Home Page Screenshot](/assets/img/screenshot_pt4_website.png)
+Part 4 - Adding Places Map
+![Repo Screenshot](assets/img/screenshot_pt4_repo.png)
+![Home Page Screenshot](assets/img/screenshot_pt4_website.png)
 
-<p> Part 5 - Adding projects dynamically </p>
-![Repo Screenshot](/assets/img/screenshot_pt5_repo.png)
-![Home Page Screenshot](/assets/img/screenshot_pt5_website.png)
+Part 5 - Adding projects dynamically
+![Repo Screenshot](assets/img/screenshot_pt5_repo.png)
+![Home Page Screenshot](assets/img/screenshot_pt5_website.png)
 
 ### Website Preview
 <p align="center"> 
