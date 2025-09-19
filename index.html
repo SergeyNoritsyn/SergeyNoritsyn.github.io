@@ -792,7 +792,7 @@
   function renderProjects() {
     const container = document.getElementById("recent-projects");
     
-    if (currentIndex == 0) {
+    if (currentIndex === 0) {
       const nextProjects = projects.slice(currentIndex, currentIndex + projectsPerLoad);
     }
     else {
