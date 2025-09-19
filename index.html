@@ -770,20 +770,20 @@
   });
 
   const projects = [
-  {
-    title: "Dynamic Risk Detection in Pediatric Transplant Patients (Thesis)",
-    img: "/assets/img/graph.webp",
-    description: "Machine learning models for early detection of complications in pediatric transplant patients.",
-    demoLink: "",
-    githubLink: ""
-  },
-  {
-    title: "Limiting LLM Hallucinations (Capstone)",
-    img: "/assets/img/project-quizup-logo-1.png",
-    description: "Using RAG-based knowledge graphs to reduce hallucinations in large language models.",
-    demoLink: "",
-    githubLink: ""
-  },
+    {
+      title: "Dynamic Risk Detection in Pediatric Transplant Patients (Thesis)",
+      img: "/assets/img/graph.webp",
+      description: "Machine learning models for early detection of complications in pediatric transplant patients.",
+      demoLink: "",
+      githubLink: ""
+    },
+    {
+      title: "Limiting LLM Hallucinations (Capstone)",
+      img: "/assets/img/project-quizup-logo-1.png",
+      description: "Using RAG-based knowledge graphs to reduce hallucinations in large language models.",
+      demoLink: "",
+      githubLink: ""
+    }
   ];
 
   let currentIndex = 0;
@@ -791,9 +791,14 @@
 
   function renderProjects() {
     const container = document.getElementById("recent-projects");
-
+    
+    if (currentIndex == 0) {
+      const nextProjects = projects.slice(currentIndex, currentIndex + projectsPerLoad);
+    }
+    else {
+      const nextProjects = projects.slice(currentIndex);
+    }
     // Slice the array to load only the next project(s)
-    const nextProjects = projects.slice(currentIndex, currentIndex + projectsPerLoad);
 
     nextProjects.forEach(project => {
       const card = document.createElement("div");
@@ -838,22 +843,13 @@
         </div>
       `;
 
-      container.appendChild(card);
-      });
+    container.appendChild(card);
+    });
 
     // Update index
     currentIndex += projectsPerLoad;
 
     // Hide "Load More" button if no more projects
-    if (currentIndex >= projects.length) {
-      document.getElementById("load-more").style.display = "none";
-    }
-
-
-    // Update index
-    currentIndex += projectsPerLoad;
-
-    // Hide button if no more projects
     if (currentIndex >= projects.length) {
       document.getElementById("load-more").style.display = "none";
     }
